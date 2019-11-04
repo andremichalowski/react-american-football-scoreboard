@@ -34,7 +34,7 @@ function App() {
           {/* //AWAY// */}
           <div className="away">
             <h2 className="away__name">Tigers</h2>
-            <div className="away__score">{count + awayFieldGoal}</div>
+            <div className="away__score">{awayCount + awayFieldGoal}</div>
           </div>
         </div>
         <BottomRow />
@@ -43,11 +43,11 @@ function App() {
       <section className="buttons">
         <div className="homeButtons">
           <button className="homeButtons__touchdown" onClick={() => setCount(count + 7)}>Home Touchdown</button>
-          <button className="homeButtons__fieldGoal" onClick={() => setCount(count + 3)}>Home Field Goal</button>
+          <button className="homeButtons__fieldGoal" onClick={() => setFieldGoal(homeFieldGoal + 3)}>Home Field Goal</button>
         </div>
         <div className="awayButtons">
-          <button className="awayButtons__touchdown" onClick={() => setCount(count + 7)}>Away Touchdown</button>
-          <button className="awayButtons__fieldGoal" onClick={() => setCount(count + 3)}>Away Field Goal</button>
+          <button className="awayButtons__touchdown" onClick={() => setAwayCount(awayCount + 7)}>Away Touchdown</button>
+          <button className="awayButtons__fieldGoal" onClick={() => setAwayFieldGoal(awayFieldGoal + 3)}>Away Field Goal</button>
         </div>
       </section>
     </div>
