@@ -22,6 +22,9 @@ In this project, you build an app that diplays a scoreboard for an american foot
 - [x] CD into the project base directory `cd american-football-scoreboard`
 - [ ] Download project dependencies by running one of these two commands `yarn` or `npm install`
 - [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
+
+
+
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
@@ -34,6 +37,9 @@ Follow these steps for completing your project.
 - [ ] Do your magic!
 
 ## Minimum Viable Product
+
+<!-- //WHERE DO WE START???
+ -->
 
 1. Hold each team's current score in a state value
 1. Render each team's current score that is in state to the DOM.
