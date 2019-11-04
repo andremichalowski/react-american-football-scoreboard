@@ -19,7 +19,7 @@ function App() {
   const [awayCount, setAwayCount] = useState(0);
   const [ awayFieldGoal, setAwayFieldGoal] = useState(0);
   // STRETCH GOALS== Timer Change
-  const [timeCount, setTimeCount] = useState(60);
+  // const [timeCount, setTimeCount] = useState(60);
   // STRETCH GOALS== Quarter Change
     const [quarterCount, setQuarterCount] = useState(0);
 
@@ -54,13 +54,13 @@ function App() {
           <button className="awayButtons__fieldGoal" onClick={() => setAwayFieldGoal(awayFieldGoal + 3)}>Away Field Goal</button>
         </div>
         {/* //STRETCH// */}
-        <div className="awayButtons">
+        {/* <div className="awayButtons">
           <button className="awayButtons__touchdown" onClick={() => setTimeCount(timeCount - 5)}>Timer-Down</button>
           <button className="awayButtons__fieldGoal" onClick={() => setTimeCount(60)}>Time Reset</button>
         </div>
         <div className="awayButtons">
           <button className="awayButtons__touchdown" onClick={() => setQuarterCount(quarterCount + 1)}>Quarter-Up</button>
-          <button className="awayButtons__fieldGoal" onClick={() => setQuarterCount(0)}>Quarter Reset</button>
+          <button className="awayButtons__fieldGoal" onClick={() => setQuarterCount(0)}>Quarter Reset</button> */}
         </div>
       </section>
     </div>
