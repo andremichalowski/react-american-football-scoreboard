@@ -18,6 +18,10 @@ function App() {
   // 2.B =========== Away Score 
   const [awayCount, setAwayCount] = useState(0);
   const [ awayFieldGoal, setAwayFieldGoal] = useState(0);
+  // STRETCH GOALS== Timer Change
+  const [timeCount, setTimeCount] = useState(60);
+  // STRETCH GOALS== Quarter Change
+    const [quarterCount, setQuarterCount] = useState(0);
 
   /* TODO STEP 3 - We need to change the hardcoded values in 
             these divs to accept dynamic values from our state. */
@@ -30,7 +34,7 @@ function App() {
             <h2 className="home__name">Lions</h2>
             <div className="home__score">{count + homeFieldGoal}</div>
           </div>
-          <div className="timer">00:03</div>
+          <div className="timer">{timeCount - setTimeCount}</div>
           {/* //AWAY// */}
           <div className="away">
             <h2 className="away__name">Tigers</h2>
@@ -48,6 +52,15 @@ function App() {
         <div className="awayButtons">
           <button className="awayButtons__touchdown" onClick={() => setAwayCount(awayCount + 7)}>Away Touchdown</button>
           <button className="awayButtons__fieldGoal" onClick={() => setAwayFieldGoal(awayFieldGoal + 3)}>Away Field Goal</button>
+        </div>
+        {/* //STRETCH// */}
+        <div className="awayButtons">
+          <button className="awayButtons__touchdown" onClick={() => setTimeCount(timeCount - 5)}>Timer-Down</button>
+          <button className="awayButtons__fieldGoal" onClick={() => setTimeCount(60)}>Time Reset</button>
+        </div>
+        <div className="awayButtons">
+          <button className="awayButtons__touchdown" onClick={() => setQuarterCount(quarterCount + 1)}>Quarter-Up</button>
+          <button className="awayButtons__fieldGoal" onClick={() => setQuarterCount(0)}>Quarter Reset</button>
         </div>
       </section>
     </div>
