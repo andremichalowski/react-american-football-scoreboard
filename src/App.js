@@ -2,7 +2,8 @@
 // import React, from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
-  //1. IMPORT HERE (insert the " { userstate }" in between the existing import react)>>>
+  // 1. =========== IMPORT HERE (insert the " { userstate }" in between the existing 
+  // "react" statement. ...see above)^^^
   import React, { useState } from "react";
 
   
@@ -11,9 +12,14 @@ function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  
   // You'll need one for the home score and another for the away score.
 
-  return (
+  // 2.A =========== Home Score 
+  const [count, setCount] = useState(0);
+  const [ homeFieldGoal, setFieldGoal] = useState(0);
+  // 2.B =========== Away Score 
+  const [awayCount, setAwayCount] = useState(0);
+  const [ awayFieldGoal, setAwayFieldGoal] = useState(0);
 
-    
+  return (
     <div className="container">
       <section className="scoreboard">
         <div className="topRow">
